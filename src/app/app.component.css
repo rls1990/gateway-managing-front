@@ -1,0 +1,15 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.custom-toolbar {
+  background-color: #297fb8;
+  color: white;
+  position: sticky;
+  z-index: 3;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+}

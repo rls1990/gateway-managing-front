@@ -1,0 +1,370 @@
+/* Estas clases te permiten crear filas y columnas de forma responsive, utilizando las clases .row y .col-*
+respectivamente. Las clases .col-* se utilizan para definir el ancho de las columnas, y las clases .sm-col-*,
+.md-col-*, .lg-col-* y .xl-col-* se utilizan para definir el ancho de las columnas para tamaños de pantalla específicos.
+Por ejemplo, si deseas crear una fila con dos columnas de igual ancho, puedes utilizar el siguiente código HTML:
+html
+<div class="row">
+  <div class="col-6">Columna 1</div>
+  <div class="col-6">Columna 2</div>
+</div>
+
+Si deseas que las columnas tengan un ancho diferente en tamaños de pantalla específicos, puedes utilizar las clases
+.sm-col-*, .md-col-*, .lg-col-* y .xl-col-*. Por ejemplo:
+html
+<div class="row">
+  <div class="col-6 sm-col-4 md-col-3 lg-col-2 xl-col-1">Columna 1</div>
+  <div class="col-6 sm-col-8 md-col-9 lg-col-10 xl-col-11">Columna 2</div>
+</div>
+
+En este ejemplo, la columna 1 tendrá un ancho del 50% en pantallas grandes, del 33.33% en pantallas medianas,
+del 25% en pantallas pequeñas y del 8.33% en pantallas extra pequeñas. La columna 2 tendrá un ancho del 50% en
+pantallas grandes, del 66.67% en pantallas medianas, del 75% en pantallas pequeñas y del 91.67% en pantallas
+extra pequeñas.
+ */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex: 1 1 0%;
+}
+
+.row.gutters {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row.gutters > * {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+/* Clases para columnas */
+.col-1 {
+  flex-basis: 8.33%;
+  max-width: 8.33%;
+}
+
+.col-2 {
+  flex-basis: 16.67%;
+  max-width: 16.67%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+}
+
+.col-5 {
+  flex-basis: 41.67%;
+  max-width: 41.67%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex-basis: 58.33%;
+  max-width: 58.33%;
+}
+
+.col-8 {
+  flex-basis: 66.67%;
+  max-width: 66.67%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.33%;
+  max-width: 83.33%;
+}
+
+.col-11 {
+  flex-basis: 91.67%;
+  max-width: 91.67%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+/* Clases para tamaños de pantalla específicos */
+/* Pantalla pequeña (sm) */
+@media (max-width: 576px) {
+  .sm-col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+  }
+
+  .sm-col-2 {
+    flex-basis: 16.67%;
+    max-width: 16.67%;
+  }
+
+  .sm-col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .sm-col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .sm-col-5 {
+    flex-basis: 41.67%;
+    max-width: 41.67%;
+  }
+
+  .sm-col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .sm-col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+  }
+
+  .sm-col-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .sm-col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .sm-col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+  }
+
+  .sm-col-11 {
+    flex-basis: 91.67%;
+    max-width: 91.67%;
+  }
+
+  .sm-col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Pantalla mediana (md) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .md-col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+  }
+
+  .md-col-2 {
+    flex-basis: 16.67%;
+    max-width: 16.67%;
+  }
+
+  .md-col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .md-col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .md-col-5 {
+    flex-basis: 41.67%;
+    max-width: 41.67%;
+  }
+
+  .md-col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .md-col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+  }
+
+  .md-col-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .md-col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .md-col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+  }
+
+  .md-col-11 {
+    flex-basis: 91.67%;
+    max-width: 91.67%;
+  }
+
+  .md-col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Pantalla grande (lg) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .lg-col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+  }
+
+  .lg-col-2 {
+    flex-basis: 16.67%;
+    max-width: 16.67%;
+  }
+
+  .lg-col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .lg-col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .lg-col-5 {
+    flex-basis: 41.67%;
+    max-width: 41.67%;
+  }
+
+  .lg-col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .lg-col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+  }
+
+  .lg-col-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .lg-col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .lg-col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+  }
+
+  .lg-col-11 {
+    flex-basis: 91.67%;
+    max-width: 91.67%;
+  }
+
+  .lg-col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Pantalla extra grande (xl) */
+@media (min-width: 993px) {
+  .xl-col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+  }
+
+  .xl-col-2 {
+    flex-basis: 16.67%;
+    max-width: 16.67%;
+  }
+
+  .xl-col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .xl-col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .xl-col-5 {
+    flex-basis: 41.67%;
+    max-width: 41.67%;
+  }
+
+  .xl-col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .xl-col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+  }
+
+  .xl-col-8 {
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .xl-col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .xl-col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+  }
+
+  .xl-col-11 {
+    flex-basis: 91.67%;
+    max-width: 91.67%;
+  }
+
+  .xl-col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
