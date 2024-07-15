@@ -9,7 +9,5 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   styleUrl: './loading.component.css',
 })
 export class LoadingComponent implements OnInit {
-  ngOnInit(): void {
-    console.log('cargado');
-  }
+  ngOnInit(): void {}
 }

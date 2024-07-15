@@ -4,7 +4,9 @@
     <div class="presentation-header-content">
       <h1>Gateway Managing Projects</h1>
       <p>Practice Angular</p>
-      <button mat-raised-button>Go to Gateway</button>
+      <button mat-raised-button [routerLink]="['/gateway']">
+        Go to Gateway
+      </button>
     </div>
   </div>
 </section>
@@ -12,13 +14,43 @@
 <section class="home-info">
   <div class="row">
     <div class="center">
-      <mat-icon
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="router"
+      <img
+        ngSrc="assets/img/gateway1.png"
+        width="250"
+        height="213"
+        alt="Imagen"
+        priority
       />
       <div style="width: 60%">
         <h2>View List of Gateway</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam
+          eligendi labore magni adipisci magnam quos pariatur?
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 4rem">
+    <div class="center">
+      <div style="width: 60%">
+        <h2>Details of each gateway</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam
+          eligendi labore magni adipisci magnam quos pariatur?
+        </p>
+      </div>
+      <i
+        class="material-icons-outlined"
+        style="font-size: 15rem; color: rgb(143, 133, 133)"
+        >description</i
+      >
+    </div>
+  </div>
+  <div class="row" style="margin-top: 4rem">
+    <div class="center">
+      <img src="assets/img/monitor-cellphone-star.ico" alt="" />
+      <div style="width: 60%">
+        <h2>Details of each gateway</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam
           eligendi labore magni adipisci magnam quos pariatur?

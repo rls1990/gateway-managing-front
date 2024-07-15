@@ -1,8 +1,16 @@
 <mat-toolbar class="mat-elevation-z3 custom-toolbar">
-  <button mat-icon-button [routerLink]="['/']">
-    <mat-icon>router</mat-icon>
+  <button mat-flat-button [routerLink]="['/']" style="background: #297fb8">
+    <span>
+      <img
+        src="assets/img/gateway-icon-menu1.png"
+        width="35"
+        alt="Imagen"
+        priority
+      />
+      <span>Gateway APP</span>
+    </span>
   </button>
-  <span>My App</span>
+
   <span class="example-spacer"></span>
 </mat-toolbar>
 <router-outlet />

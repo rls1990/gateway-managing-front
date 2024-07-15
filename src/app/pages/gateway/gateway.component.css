@@ -1,0 +1,38 @@
+.gateway-container {
+  margin: 6rem auto;
+  padding: 1rem;
+}
+
+.mat-mdc-card-header {
+  background-color: #297fb8;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.mat-mdc-card-title {
+  font-size: 18px;
+  width: 120px;
+}
+
+.mat-mdc-outlined-button {
+  border-color: white;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-card-content {
+  padding: 0;
+}
+
+.mat-mdc-card-content:last-child {
+  padding-bottom: 0;
+}
+
+.mat-badge {
+  position: relative;
+  top: -10px;
+}
