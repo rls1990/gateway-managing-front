@@ -16,4 +16,10 @@ export const routes: Routes = [
     title: 'Gateway',
     loadComponent: () => import('./pages/gateway/gateway.component'),
   },
+  {
+    path: 'gateway/add',
+    title: 'Add Gateway',
+    loadComponent: () =>
+      import('./pages/gateway/pages/add-gateway/add-gateway.component'),
+  },
 ];

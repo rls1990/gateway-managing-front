@@ -15,6 +15,7 @@ import { GatewayService } from '../../services/gateway.service';
 import { Gateway } from '../../interfaces/gateway';
 import { Observable } from 'rxjs';
 import { MatBadgeModule } from '@angular/material/badge';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-gateway',
@@ -27,6 +28,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatTableModule,
     MatPaginatorModule,
     MatBadgeModule,
+    RouterModule,
   ],
   templateUrl: './gateway.component.html',
   styleUrl: './gateway.component.css',

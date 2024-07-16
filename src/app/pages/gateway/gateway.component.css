@@ -31,3 +31,9 @@ table {
 .mat-mdc-card-content:last-child {
   padding-bottom: 0;
 }
+
+.mat-badge {
+  position: relative;
+  left: 17px;
+  top: 8px;
+}

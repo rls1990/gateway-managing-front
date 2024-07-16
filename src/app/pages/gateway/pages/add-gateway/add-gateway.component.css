@@ -1,0 +1,21 @@
+.add-gateway-container {
+  margin: 6rem auto;
+  padding: 1rem;
+}
+
+.mat-mdc-card-header {
+  background-color: #297fb8;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.mat-mdc-card-title {
+  font-size: 18px;
+  width: 120px;
+}
+
+.mat-mdc-form-field {
+  /* background-color: #297fb8; */
+  --mdc-filled-text-field-container-color: rgb(255, 255, 255);
+}
